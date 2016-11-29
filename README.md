@@ -126,5 +126,11 @@ HAVING post_count >= 3
 
 
 The posts with titles that start with the word "The"
+SELECT *
+FROM posts
+WHERE title LIKE 'The%'
 
 Posts with IDs of 3,5,7, and 9
+SELECT *
+FROM posts
+WHERE id IN (3, 5, 7, 9)
